@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+	background-color: #ABB2B9;
+	font-family: 'Roboto', sans-serif;
+}
+.header{
+	background-color: #58D68D;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: -20px;
+	padding: 10px 40px;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+.header a{
+	display: none;
+	padding: 20px;
+	text-decoration: none;
+	color: black;
+	
+}
+.header a:hover{
+	color: white;
+}
+.navbar{
+	position: relative;
+}
+.nav{
+	background-color: #58D68D;
+	
+	position: absolute;
+	
+	width: 130px;
+}
+.navbar:hover .nav a{
+	display: block;
+}
+
+
+.headercenter{
+	text-align: center;
+}
+.logo{
+	font-size: 30px;
+	color: white;
+}
+.bottom{
+	font-size: 15px;
+}
+.fas,.fab{
+	color: white;
+	padding-top: 10px;
+}
+.intro{
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZ-e1PcdkarF55S9z_Q9U5ZXYo3nESNRy-eyjLoWvO1ngm9eEW&usqp=CAU");
+	background-size: cover;
+	margin: 0 -20px 20px -20px;
+	padding-top: 200px;
+	height: 420px;
+	text-align: center;
+}
+.titles{
+	background: #ECF0F1;
+	opacity: 0.8;
+	width: 40%;
+	margin: 0 auto;
+	padding: 30px;
+	border-radius: 10px;
+	z-index: 1;
+	animation-name: move;
+	animation-duration: 2s;
+	
+}
+@keyframes move{
+	50%{width: 30%;}
+	
+	100%{width: 40%;}
+}
+.titles h1{
+	font-size: 50px;
+}
+.titles button{
+	margin-top: 20px;
+	padding: 7px 20px;
+	background: #D35400;
+	border: none;
+	border-radius: 5px;
+	
+}
+.subbody{
+	display: flex;
+	justify-content: space-evenly;
+	width: 95%;
+	box-shadow: 0px 10px 20px black;
+	margin: 0 auto;
+	padding: 20px;
+}
+.names img{
+	height: 50px;
+	width: 130px;
+	padding-left: 35px;
+}
+.names h3{
+	text-align: center;
+}
+.products{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+	text-align: center;
+	margin: 50px 10px 0 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+.products img{
+	height: 230px;
+	width: 300px;
+}
+.products p{
+	color: #D35400;
+}
+.imagecontainer{
+	position: relative;
+}
+.description{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 6% 0 0 6%;	
+	background-color: #AED6F1;
+	display: none;
+}
+.description .fas{
+	margin-right: 10px;
+}
+.imagecontainer:hover .description{
+	display: block;
+}
+.bag-btn{
+	background-color: #ee8d0e;
+	padding: 0 10px 5px 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #58D68D; 
+	margin: 30px -20px -20px -20px;
+	padding: 0px 60px;
+}
+.terms{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: px;
+}
+.media{
+	padding-bottom: 10px;
+}
+.footer a{
+	padding-right: 10px;
+}
+.fa-facebook{
+	color: blue;
+}
+.fa-twitter{
+	color: #5DADE2;
+}
+.fa-instagram{
+	color: #F83D87;
+}
+.fa-envelope{
+	color: #2E86C1;
+}
+.fa-linkedin-in{
+	color: rgb(57, 25, 236);
+}
+.fa-youtube{
+	color: red;
+}
+/*about us */
+
+.containe{
+	
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 0 10px 20px black;
+	padding: 50px;
+	background-color: #EAEDED;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif; 
+	margin-top: 50px;
+	
+}
+.intr{
+	text-align: center;
+}
+/* Pricing */
+.mainp{
+	background: #FCF3CF;
+	width: 65%;
+	margin: 0 auto;
+	padding: 50px 0 50px 0;
+	margin-top: 50px;
+	border-radius: 10px;
+}
+.heading{
+	text-align: center;
+}
+td,th{
+	text-align: left;
+	padding-left: 20px;
+}
+table{
+	width: 80%;
+	margin: 0 auto;
+	height: 400px;
+	
+}
+table caption{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+/* contact us */
+.contain{
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+	box-shadow: 0px 10px 20px black;
+	background-color: #F2F4F4;
+	border-radius:10px;
+	padding: 15px;
+	margin-top: 50px;
+}
+.social{
+	display: flex;
+	justify-content: space-evenly;
+}
+.social a{
+	margin-left: px;
+}
+/* sign up*/
+.container-s{
+    width:40%;
+    margin: 0 auto;
+    background-color: #D6DBDF;
+    box-shadow: 0 2px 10px #85929E;
+	padding: 50px 0 50px 100px;
+	margin-top: 50px;
+	border-radius: 10px;
+}
+.container-s input{
+    width: 70%;
+    padding: 12px;
+    border-radius: 7px;
+}
+#bt{
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
